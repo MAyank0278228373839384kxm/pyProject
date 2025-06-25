@@ -1,9 +1,11 @@
 from flask import Flask
-app=Flask(_name_)
+
+app = Flask(__name__)
 
 @app.route('/')
 def hello():
     return "Hello from Flask on Render!"
 
-if _name_ == '_main_':
-    app.run(host='0.0.0.0',port = 10000)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=10000)
+
